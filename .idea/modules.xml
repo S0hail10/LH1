@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LH1.iml" filepath="$PROJECT_DIR$/LH1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MatheKlasse/MatheKlasse.iml" filepath="$PROJECT_DIR$/MatheKlasse/MatheKlasse.iml" />
+    </modules>
+  </component>
+</project>
