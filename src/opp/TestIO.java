@@ -12,6 +12,8 @@ public class TestIO {
         int alter = IO.readInteger();
         System.out.println("Du bist anscheinend " + alter + " Jahre alt");
 
-        System.out.println("");
+        System.out.println("wie gross bist du?");
+        double gross = IO.readDouble();
+        System.out.println("du bist " + gross +"gross");
     }
 }

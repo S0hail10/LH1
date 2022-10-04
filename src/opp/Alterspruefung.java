@@ -9,11 +9,11 @@ public class Alterspruefung {
         System.out.println(alter);
 
         if (alter < 18) {
-            System.out.println("Du bist noch minderjährig");
+            System.out.println("Du bist noch minderjaehrig");
         }
         else
         {
-            System.out.println("Du bist schon volljähri");
+            System.out.println("Du bist schon volljaehri");
         }
     }
 }

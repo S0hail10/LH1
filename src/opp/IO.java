@@ -28,8 +28,8 @@ public class IO {
         while (true) {
             try {
                 String text = readString();
-                double zahl1 = Double.parseDouble(text);
-                return zahl1;
+                double zahl = Double.parseDouble(text);
+                return zahl;
 
             } catch (NumberFormatException e) {
                 System.out.println("Falsche Einageb!! Bitte wiederholer");
