@@ -13,7 +13,7 @@ public class Alterspruefung {
         }
         else
         {
-            System.out.println("Du bist schon volljaehri");
+            System.out.println("Du bist schon volljaehrig");
         }
     }
 }
