@@ -33,8 +33,23 @@ public class IO {
 
             } catch (NumberFormatException e) {
                 System.out.println("Falsche Einageb!! Bitte wiederholer");
-
             }
         }
     }
+    public static boolean readBoolean() throws IOException {
+        while (true) {
+        String eingabe = readString();
+        if (eingabe != null) {
+            if (eingabe.equalsIgnoreCase("ja") || (eingabe.equalsIgnoreCase("j") || (eingabe.equalsIgnoreCase("yes")))) {
+                return true;
+            }else {                if (eingabe.equalsIgnoreCase("Nein") || (eingabe.equalsIgnoreCase("n") || (eingabe.equalsIgnoreCase("No"))))                  return false;
+                }
+            System.out.println("EROR 404 not founded");
+            }
+
+        }
+    }
 }
+
+
+
