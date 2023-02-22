@@ -1,26 +1,41 @@
-public class testProgramm {
+import java.util.ArrayList;
+
+class ProgrammSuS {
     public static void main(String[] args) {
-        Trainer trainer = new Trainer();
-        trainer.setName("David");
-        trainer.setAlter(18);
-        trainer.setErfahrung(0);
-        System.out.println(trainer);
-        System.out.println();
+        System.out.println("Schritt 4:");
 
-        Spieler spieler = new Spieler();
-        spieler.setName("Amjad");
-        spieler.setAlter(5);
-        spieler.setStaerke(-1);
-        spieler.setMotivation(0);
-        spieler.setTore(-5);
-        spieler.setTorschuss(-10);
-        System.out.println("Name: " + spieler.getName());
-        System.out.println("Alter:"+ spieler.getAlter());
-        System.out.println("St‰rke:"+ spieler.getStaerke());
-        System.out.println("Motivation:"+ spieler.getMotivation());
-        System.out.println("Tore: "+ spieler.getTore()+  " (Eigentor)");
-        System.out.println("Torschuss:"+ spieler.getTorschuss());
+        // Mannschaft 1
+        Trainer trainer1 = new Trainer("Kohfeld", 38, 8);
+        Torwart torwart1 = new Torwart("Pavlenka", 28, 9, 10, 9);
+        ArrayList<Spieler> spielerListe1 = new ArrayList<Spieler>();
+        Spieler spieler1 = new Spieler("Klaaﬂen", 27, 7, 7, 10, 10);
+        spielerListe1.add(spieler1);
+        spieler1 = new Spieler("Rashica", 24, 9, 9, 6, 50);
+        spielerListe1.add(spieler1);
+        Mannschaft team1 = new Mannschaft("Werder All Stars", trainer1, torwart1, spielerListe1);
+        System.out.println(team1);
 
+        // Mannschaft 2
+        Trainer trainer2 = new Trainer("Weiﬂnix", 50, 8);
+        Torwart torwart2 = new Torwart("H‰ltnix", 33, 9, 10, 9);
+        ArrayList<Spieler> spielerListe2 = new ArrayList<Spieler>();
+        Spieler spieler2 = new Spieler("Siehtnix", 25, 3, 7, 10, 3);
+        spielerListe2.add(spieler2);
+        spieler2 = new Spieler("Trifftnix", 27, 2, 9, 6, 5);
+        spielerListe2.add(spieler2);
+        Mannschaft team2 = new Mannschaft("Luschen HSV", trainer2, torwart2, spielerListe2);
+        System.out.println(team2);
 
+        // Spiel
+        Spiel spiel = new Spiel(team1, team2);
+        System.out.println(spiel);
+
+        // Ergebnis
+        Ergebnis ergebnis = new Ergebnis();
+        ergebnis.gettoreGast();
+        ergebnis.gettoreGast();
+        ergebnis.gettoreHeim();
+        System.out.println(spiel);
+        System.out.println(ergebnis);
     }
 }

@@ -1,54 +1,63 @@
-public class Spieler {
-    private String name;
-    private int alter;
-    private int Staerke;
+public class Spieler extends Person {
+    private int staerke;
     private int torschuss;
     private int motivation;
     private int tore;
 
-    public Spieler(String name, int alter, int Staerke, int torschuss, int motivation, int tore){
+    public Spieler(String name, int alter, int staerke, int torschuss, int motivation, int tore){
+        super(name,alter);
 
+        this.staerke = staerke;
+        this.torschuss = torschuss;
+        this.motivation = motivation;
+        this.tore = tore;
     }
 
-    public Spieler() {
-
+    public int getStaerke() {
+        return staerke;
     }
 
-    public String getName() {return name;
+    public void setStaerke(int staerke) {
+        this.staerke = staerke;
     }
 
-    public void setName(String name) {this.name = name;
+    public int getTorschuss() {
+        return torschuss;
     }
 
-    public int getAlter() {return alter;
+    public void setTorschuss(int torschuss) {
+        this.torschuss = torschuss;
     }
 
-    public void setAlter(int alter) {this.alter = alter;
+    public int getMotivation() {
+        return motivation;
     }
 
-    public int getStaerke() {return Staerke;
+    public void setMotivation(int motivation) {
+        this.motivation = motivation;
     }
 
-    public void setStaerke(int staerke) {this.Staerke = staerke;
+    public int getTore() {
+        return tore;
     }
 
-    public int getTorschuss() {return torschuss;
+    public void setTore(int tore) {
+        this.tore = tore;
+    }
+    public void addTor() {
+        this.tore++;
     }
 
-    public void setTorschuss(int torschuss) {this.torschuss = torschuss;
+    @Override
+    public String toString() {
+        return "Spieler" +  super.toString()+
+                "staerke=" + staerke + "\n\t" +
+                "torschuss=" + torschuss + "\n\t" +
+                "motivation=" + motivation + "\n\t" +
+                "tore=" + tore + "\n\t";
     }
 
-    public int getMotivation() {return motivation;
-    }
 
-    public void setMotivation(int motivation) {this.motivation = motivation;
-    }
-
-    public int getTore() {return tore;
-    }
-
-    public void setTore(int tore) {this.tore = tore;
-    }
 }
 
 
