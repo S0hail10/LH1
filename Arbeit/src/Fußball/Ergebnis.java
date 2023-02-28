@@ -1,3 +1,5 @@
+package Fuﬂball;
+
 public class Ergebnis {
 
         private int toreGast;
@@ -53,7 +55,7 @@ public class Ergebnis {
 
         public String toString() {
 
-            return "Ergebnis " +"\n\t"+
+            return "Fuﬂball.Fuﬂball.Ergebnis " +"\n\t"+
 
                     "Heimmannschaft= " + toreGast +"\n\t"+
 

@@ -1,3 +1,5 @@
+package Fuﬂball;
+
 public class Spieler extends Person {
     private int staerke;
     private int torschuss;
@@ -50,7 +52,7 @@ public class Spieler extends Person {
 
     @Override
     public String toString() {
-        return "Spieler" +  super.toString()+
+        return "Fuﬂball.Spieler" +  super.toString()+
                 "staerke=" + staerke + "\n\t" +
                 "torschuss=" + torschuss + "\n\t" +
                 "motivation=" + motivation + "\n\t" +

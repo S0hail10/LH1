@@ -1,3 +1,5 @@
+package Fuﬂball;
+
 import java.util.Random;
 
 public class Gameplay {
@@ -7,8 +9,8 @@ public class Gameplay {
 	private static final int MAX_DAUER_BIS_AKTION = 10;
 	
 	/**
-	 * Simuliert ein Spiel.
-	 * @param spiel Das zu spielende Spiel.
+	 * Simuliert ein Fuﬂball.Spiel.
+	 * @param spiel Das zu spielende Fuﬂball.Spiel.
 	 */
 	public static void spielen(Spiel spiel) {
 		Random random = new Random();
@@ -19,7 +21,7 @@ public class Gameplay {
 		// Zuf‰llige Spielminute f¸r erste Aktion festlegen
 		int spielMinute = 1 + random.nextInt(MAX_DAUER_BIS_AKTION + 1);
 		do {
-			// Ermittlung der offensiven bzw. defensiven Mannschaft
+			// Ermittlung der offensiven bzw. defensiven Fuﬂball.Mannschaft
 			int heimWert = ermittelMannschaftsWert(spiel.getGastMannschaft());
 			int gastWert = ermittelMannschaftsWert(spiel.getGastMannschaft());
 			int summe = heimWert + gastWert;
@@ -55,10 +57,24 @@ public class Gameplay {
 		} while(spielMinute <= spielDauer);
 		spiel.getSpielbericht().append(spiel.getErgebnis());
 	}
+
+	public static void brecheSpielAb(int spielminute) throws SpielAbbruchException {
+
+		Random random = new Random();
+
+		int zufallszahl = random.nextInt(999);
+
+		if (zufallszahl == 0) {
+
+			throw new SpielAbbruchException(spielminute);
+
+		}
+
+	}
 	
 	/**
-	 * Errechnet den aktuellen St‰rkewert eine Mannschaft. 
-	 * Errechnet sich aus der Spielst‰rke und Motivation der Mannschaft und der Erfahrung des Trainers. 
+	 * Errechnet den aktuellen St‰rkewert eine Fuﬂball.Mannschaft.
+	 * Errechnet sich aus der Spielst‰rke und Motivation der Fuﬂball.Mannschaft und der Erfahrung des Trainers.
 	 * @return Der St‰rkewert.
 	 */
 	private static int ermittelMannschaftsWert(Mannschaft mannschaft) {
@@ -70,7 +86,7 @@ public class Gameplay {
 	/**
 	 * Ermittelt, ob ein Torschuss erfolgreich ist oder nicht.
 	 * @param schuetze Der Torsch¸tze.
-	 * @param torwart Der Torwart.
+	 * @param torwart Der Fuﬂball.Torwart.
 	 * @return Ja, wenn der Torschuss erfolgreich ist. Sonst nein.
 	 */
 	private static boolean erzieltTor(Spieler schuetze, Torwart torwart) {

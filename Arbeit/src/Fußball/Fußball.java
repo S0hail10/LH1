@@ -1,3 +1,5 @@
+package Fuﬂball;
+
 import java.util.ArrayList;
 
 public class Fuﬂball {

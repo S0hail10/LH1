@@ -1,3 +1,5 @@
+package Fußball;
+
 public class Trainer extends Person {
     private int erfahrung;
 

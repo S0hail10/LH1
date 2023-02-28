@@ -1,5 +1,6 @@
+package Fuﬂball;
 
-    public class Spiel {
+public class Spiel {
 
         private StringBuilder spielbericht;
 
@@ -71,7 +72,7 @@
 
         public String toString() {
 
-            return "\n\t" + "Spiel " +
+            return "\n\t" + "Fuﬂball.Spiel " +
 
                     "Heimmannschaft = " + heimMannschaft.getName() +
 

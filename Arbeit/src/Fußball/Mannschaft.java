@@ -1,3 +1,5 @@
+package Fuﬂball;
+
 import java.util.ArrayList;
 
 public class Mannschaft {
@@ -108,7 +110,7 @@ public class Mannschaft {
 
         public String toString() {
 
-            return "\n\t" + "Mannschaft " +"\n\t"+
+            return "\n\t" + "Fuﬂball.Mannschaft " +"\n\t"+
 
                     "name = " + name +"\n\t"+
 
