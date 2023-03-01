@@ -3,7 +3,7 @@ package Konto;
 public class Mitarbeiter extends Person {
 
     public Mitarbeiter(String vorname, String nachname) {
-        super(vorname, nachname);
+        super(vorname, nachname, null);
     }
 
     @Override

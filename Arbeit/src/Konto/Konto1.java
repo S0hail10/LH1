@@ -2,15 +2,15 @@ package Konto;
 
 public abstract class Konto1 {
     private Kunde inhaber;
-    private double kotoStand;
+    private double kontoStand;
     private double kreditLimit;
     private double zinsGuthaben;
 
-    public Konto1(Kunde inhaber, double kreditLimit, double zinsGuthaben) {
+    public Konto1(Kunde inhaber, double kreditLimit, double kontoStand, double zinsGuthaben) {
         this.inhaber = inhaber;
-        this.kotoStand = kotoStand;
         this.kreditLimit = kreditLimit;
         this.zinsGuthaben = zinsGuthaben;
+        this.kontoStand = kontoStand;
     }
 
     public Kunde getInhaber() {
@@ -18,8 +18,8 @@ public abstract class Konto1 {
     }
 
 
-    public double getKotoStand() {
-        return kotoStand;
+    public double getKontoStand() {
+        return kontoStand;
     }
 
 
@@ -39,8 +39,14 @@ public abstract class Konto1 {
         this.zinsGuthaben = zinsGuthaben;
     }
     public void einzahlen(double betrag) {
+        kontoStand += betrag;
     }
     public boolean auszahlen(double betrag){
+
+        if ( kontoStand - betrag >-kreditLimit){
+            kontoStand-=betrag;
+            return true;
+        }else
         return false;
     }
 
@@ -48,7 +54,7 @@ public abstract class Konto1 {
     public String toString() {
         return "Konto1" + "\n\t " +
                 "inhaber=" + inhaber +
-                ", kotoStand=" + kotoStand +
+                ", kotoStand=" + kontoStand +
                 ", kreditLimit=" + kreditLimit +
                 ", zinsGuthaben=" + zinsGuthaben +
                 '}';

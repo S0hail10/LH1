@@ -3,8 +3,10 @@ package Konto;
 public class Kunde extends Person  {
 
     private Mitarbeiter betreuer;
-    public Kunde(String vorname, String nachname ) {
-        super(vorname, nachname);
+
+    public Kunde(String vorname, String nachname, Adresse adresse, Mitarbeiter betreuer) {
+        super(vorname, nachname, adresse);
+        this.betreuer = betreuer;
     }
 
     public Mitarbeiter getBetreuer() {
