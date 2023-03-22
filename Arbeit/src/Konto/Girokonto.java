@@ -28,8 +28,8 @@ public class Girokonto extends Konto1 {
 
     @Override
     public String toString() {
-        return "Girokonto" +
-                "zinsKredit=" + zinsKredit ;
+        return  "Girokonto "          +
+                "zinsKredit "         +      zinsKredit ;
     }
 }
 

@@ -38,10 +38,9 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "vorname='" + vorname + '\'' +
-                ", nachname='" + nachname + '\'' +
-                ", adresse=" + adresse +
-                '}';
+        return "Person "         +
+                "vorname "       +       vorname           +       "\n\t"        +
+                "nachname "      +       nachname          +       "\n\t"        +
+                "adresse "       +       adresse           +       "\n\t"        ;
     }
 }

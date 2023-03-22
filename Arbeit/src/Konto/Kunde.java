@@ -19,8 +19,8 @@ public class Kunde extends Person  {
 
     @Override
     public String toString() {
-        return "Kunde" + "\n\t " +
-                super.toString() +
-                "betreuer=" + betreuer + "\n\t ";
+        return "Kunde "             +               "\n\t "     +
+                super.toString()    +
+                "betreuer "         +   betreuer +  "\n\t "     ;
     }
 }

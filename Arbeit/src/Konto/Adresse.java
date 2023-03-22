@@ -47,12 +47,11 @@ public class Adresse {
 
     @Override
     public String toString() {
-        return "Adresse{" +
-                "strasse='" + strasse + '\'' +
-                ", hausNr='" + hausNr + '\'' +
-                ", plz='" + plz + '\'' +
-                ", ort='" + ort + '\'' +
-                '}';
+        return  "Adresse "   +
+                "strasse "   + strasse       + "\n\t"    +
+                "hausNr "    + hausNr        + "\n\t"    +
+                "plz "       + plz           + "\n\t"    +
+                "ort "       + ort           + "\n\t"    ;
     }
 }
 

@@ -52,12 +52,11 @@ public abstract class Konto1 {
 
     @Override
     public String toString() {
-        return "Konto1" + "\n\t " +
-                "inhaber=" + inhaber +
-                ", kotoStand=" + kontoStand +
-                ", kreditLimit=" + kreditLimit +
-                ", zinsGuthaben=" + zinsGuthaben +
-                '}';
+        return "Konto "              +                       "\n\t" +
+                "inhaber "           + inhaber         +     "\n\t" +
+                "kontoStand "        + kontoStand      +     "\n\t" +
+                "kreditLimit "       + kreditLimit     +     "\n\t" +
+                "zinsGuthaben "      + zinsGuthaben                 ;
     }
 }
 
